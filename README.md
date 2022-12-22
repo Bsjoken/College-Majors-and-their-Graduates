@@ -4,6 +4,8 @@
 ### -What's the highest paying major after graduation?
 ### -What's the comparison between highest median salary vs lowest median salary after graduation?
 ### -What's the 25th percentile salary for people that graduated vs 25th perecentile salary for people that didn't graduate? 
+### -Which Major has the most women in it?
+### -Which major has the most men in it?
 
 ## -First we're going to to find out what major is employed, unemployed and the median salary. 
 
@@ -34,3 +36,18 @@ FROM `college-majors.Grad_Students.Grad students`
 
 RESULTS: ![image](https://user-images.githubusercontent.com/120198393/209220651-14723498-fa32-429c-a561-d7188ae0794b.jpeg)
 
+## -Which Major has the most women in it?
+
+SELECT Women, Major
+FROM `college-majors.Recent_Grads.Grads`
+ORDER BY Women DESC
+
+RESULT: ![image](https://user-images.githubusercontent.com/120198393/209228696-5d17c0fe-fd04-4def-94e3-2adc25ce0136.jpeg)
+
+## -Which major has the most men in it?
+
+SELECT Men, Major
+FROM `college-majors.Recent_Grads.Grads`
+ORDER BY Men DESC
+
+RESULT: ![image](https://user-images.githubusercontent.com/120198393/209229078-d4573c43-5632-497a-b44f-b6ab0a799676.jpeg)
